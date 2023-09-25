@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ri-github-fill{
+    font-size: 30px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 1rem 3rem;
+}
+#filter{
+    padding: 10px;
+    width: 25%;
+}
+main{
+    /* margin: 10px 8rem; */
+}
+.main-top{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 7rem;
+}
+.main-top div{
+    display: flex;
+    gap: 1rem;
+}
+#getLink{
+    all: unset;
+    border-radius: 8px;
+    border: 2px solid rgb(192, 189, 189);
+    padding: 5px;
+}
+.main-top a{
+    background-color: rgba(95, 90, 90, 0.849);
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+.main-top button{
+    all: unset;
+    background-color: rgba(95, 90, 90, 0.849);
+    padding: 10px 1.3rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.githubLink{
+    display: none;
+    color: white;
+}
+.user-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(199, 194, 194, 0.891);
+    padding: 1rem 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(252, 242, 242, 0.891);
+}
+.user-info img{
+    width: 20%;
+    border-radius: 50%;
+}
+.userName{
+    color: rgba(76, 75, 75, 0.926);
+}
+.user-info a{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+.userProfile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 85%;
+    margin: 1.5rem auto;
+}
+@media screen and (max-width: 992px) {
+    .userProfile{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .userProfile{
+        grid-template-columns: 1fr;
+    }
+    #filter{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 600px) {
+    main{
+        /* margin: 10px 3rem; */
+    }
+}
+@media screen and (max-width: 380px) {
+    .main-top div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
